@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Card</title>
+</head>
+
+<body style="background-color:#111; color:white; font-family:Arial;">
+
+    <h2 style="text-align:center; background-color:yellow; color:black; padding:10px;">
+        MENUCARD
+    </h2>
+
+    <table border="2" width="100%" cellspacing="10" cellpadding="10" style="background-color:black; border-color:yellow;">
+
+        <tr>
+
+            <td>
+                <h3 style="text-align:center; color:yellow;">PURE VEG</h3>
+                <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/indian-food-2009590_640.jpg"
+                     width="100%" height="150">
+
+                <table border="1" width="100%" style="color:yellow; border-color:yellow;">
+                    <tr>
+                        <th>Menu</th><th>Price</th>
+                    </tr>
+                    <tr><td>Mutter Paneer</td><td>200</td></tr>
+                    <tr><td>Shahi Paneer</td><td>220</td></tr>
+                    <tr><td>Kaju Masala</td><td>250</td></tr>
+                    <tr><td>Palak Paneer</td><td>180</td></tr>
+                    <tr><td>Veg Kolhapuri</td><td>160</td></tr>
+                </table>
+            </td>
+
+            <td>
+                <h3 style="text-align:center; color:yellow;">BREAD'S</h3>
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/bread-1239242_640.jpg"
+                     width="100%" height="150">
+
+                <table border="1" width="100%" style="color:yellow; border-color:yellow;">
+                    <tr>
+                        <th>Menu</th><th>Price</th>
+                    </tr>
+                    <tr><td>Tandoori Roti</td><td>20</td></tr>
+                    <tr><td>Lachha Paratha</td><td>30</td></tr>
+                    <tr><td>Butter Naan</td><td>25</td></tr>
+                    <tr><td>Roomali Roti</td><td>10</td></tr>
+                    <tr><td>Aloo Paratha</td><td>50</td></tr>
+                </table>
+            </td>
+
+            <td>
+                <h3 style="text-align:center; color:yellow;">NON-VEG</h3>
+                <img src="https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_640.jpg"
+                     width="100%" height="150">
+
+                <table border="1" width="100%" style="color:yellow; border-color:yellow;">
+                    <tr>
+                        <th>Menu</th><th>Price</th>
+                    </tr>
+                    <tr><td>Butter Chicken</td><td>350</td></tr>
+                    <tr><td>Kadai Chicken</td><td>250</td></tr>
+                    <tr><td>Chicken Curry</td><td>300</td></tr>
+                    <tr><td>Fish Curry</td><td>400</td></tr>
+                    <tr><td>Egg Curry</td><td>150</td></tr>
+                </table>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                <h3 style="text-align:center; color:yellow;">RICE</h3>
+                <img src="https://cdn.pixabay.com/photo/2017/06/02/18/24/rice-2367029_640.jpg"
+                     width="100%" height="150">
+
+                <table border="1" width="100%" style="color:yellow; border-color:yellow;">
+                    <tr>
+                        <th>Menu</th><th>Price</th>
+                    </tr>
+                    <tr><td>Jeera Rice</td><td>130</td></tr>
+                    <tr><td>Veg Pulao</td><td>150</td></tr>
+                    <tr><td>Plain Rice</td><td>90</td></tr>
+                    <tr><td>Biryani</td><td>150</td></tr>
+                    <tr><td>Tawa Pulao</td><td>100</td></tr>
+                </table>
+            </td>
+
+            <td>
+                <h3 style="text-align:center; color:yellow;">CHINESE</h3>
+                <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/noodles-3008145_640.jpg"
+                     width="100%" height="150">
+
+                <table border="1" width="100%" style="color:yellow; border-color:yellow;">
+                    <tr>
+                        <th>Menu</th><th>Price</th>
+                    </tr>
+                    <tr><td>Noodles</td><td>140</td></tr>
+                    <tr><td>Manchurian</td><td>130</td></tr>
+                    <tr><td>Fried Rice</td><td>100</td></tr>
+                    <tr><td>Schezwan Noodles</td><td>160</td></tr>
+                    <tr><td>Chicken Soup</td><td>170</td></tr>
+                </table>
+            </td>
+
+            <td>
+                <h3 style="text-align:center; color:yellow;">SOUTH INDIAN</h3>
+                <img src="https://cdn.pixabay.com/photo/2020/01/14/14/23/dosa-4763949_640.jpg"
+                     width="100%" height="150">
+
+                <table border="1" width="100%" style="color:yellow; border-color:yellow;">
+                    <tr>
+                        <th>Menu</th><th>Price</th>
+                    </tr>
+                    <tr><td>Plain Dosa</td><td>35</td></tr>
+                    <tr><td>Masala Dosa</td><td>45</td></tr>
+                    <tr><td>Vada Sambar</td><td>40</td></tr>
+                    <tr><td>Idli Sambar</td><td>50</td></tr>
+                    <tr><td>Uttapa</td><td>70</td></tr>
+                </table>
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>

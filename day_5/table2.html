@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 2</title>
+    <style>
+
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #weight{
+            color:aqua;
+        }
+        .gender{
+            color: violet;
+        }
+    </style>
+
+</head>
+<body>
+    <table cellpadding="10">
+        <caption>A test table merged cells</caption>
+      <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <th id="weight">Weight</th>
+           
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+               <th class="gender">Males</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td> 
+            </tr>
+            <tr>
+                <th class="gender">Females</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td> 
+            </tr>
+      </tbody>
+
+    </table>
+</body>
+</html>

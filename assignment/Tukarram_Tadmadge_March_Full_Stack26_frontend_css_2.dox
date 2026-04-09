@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Properties</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, pink, purple);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 80px 30px;
+        }
+
+        .container {
+            width: 140px;
+            height: 140px;
+            background: linear-gradient(orange, yellow);
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .box {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(blue, cyan);
+            border: 1px solid black;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .start { justify-content: flex-start; }
+        .center { justify-content: center; }
+        .end { justify-content: flex-end; }
+
+        .between { 
+            justify-content: space-between; 
+            gap: 5px;
+        }
+
+        .around { 
+            justify-content: space-around; 
+            gap: 5px;
+        }
+
+        .evenly { 
+            justify-content: space-evenly; 
+            gap: 5px;
+        }
+
+        .align-center { align-items: center; }
+        .align-end { align-items: flex-end; }
+
+        .both-center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .both-end {
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="container start">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container center">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container end">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container between">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container around">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container evenly">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+    </div>
+
+    <div class="row2">
+
+        <div class="container align-center">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container align-end">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container both-center">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="container both-end">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

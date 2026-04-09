@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Grid Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+
+
+
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 300px 60px;
+        }
+
+        .header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #f2f2f2;
+            padding: 10px;
+        }
+
+        .main {
+            grid-area: main;
+            background: #ffffff;
+            padding: 10px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">Header</div>
+
+        <div class="sidebar">
+            <b>Sidebar</b><br>
+            The Menu or quick access content.
+        </div>
+
+        <div class="main">
+            <b>Main Content</b><br>
+            The main website content should be displayed here.
+        </div>
+
+        <div class="footer">Footer</div>
+
+    </div>
+
+</body>
+</html>

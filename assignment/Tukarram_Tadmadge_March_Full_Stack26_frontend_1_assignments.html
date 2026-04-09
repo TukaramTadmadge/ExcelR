@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        table {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 5px 15px;
+        }
+
+        form input, form textarea {
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>Welcome to my website!</h1>
+        <p>This is the home page of my website.</p>
+    </header>
+
+    <!-- Semantic Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>My name is John Doe and I'm a web developer.</p>
+
+        <!-- Non-semantic div -->
+        <div>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ol>
+        </div>
+
+        <!-- Table Layout -->
+        <table border="1">
+            <tr>
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+                <td>Row 2, Column 2</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Semantic Section -->
+    <section>
+        <h2>Contact Me</h2>
+
+        <!-- Form (Non-semantic container used) -->
+        <div>
+            <form>
+                <label>Name:</label>
+                <input type="text" name="name">
+
+                <label>Email:</label>
+                <input type="email" name="email">
+
+                <label>Message:</label>
+                <textarea rows="4" cols="30"></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Write some content here</p>
+        <p>write Some more content here</p>
+    </footer>
+
+</body>
+</html>

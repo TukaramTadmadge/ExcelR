@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipkart Login</title>
+</head>
+
+<body style="margin:0; font-family: Arial; background:#f1f3f6;">
+
+    <div style="width:700px; height:400px; margin:80px auto; display:flex; box-shadow:0 0 10px gray;">
+
+        <!-- LEFT PANEL -->
+        <div style="width:40%; background:#2874f0; color:white; padding:30px; position:relative;">
+            
+            <h2>Login</h2>
+            <p style="font-size:14px;">
+                Get access to your Orders,<br>
+                Wishlist and Recommendations
+            </p>
+
+            <!-- Fixed Image -->
+            <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png"
+                 style="width:150px; position:absolute; bottom:20px; left:30px;">
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div style="width:60%; background:white; padding:30px;">
+
+            <input type="text" placeholder="Enter Email/Mobile number"
+                   style="width:100%; padding:10px; margin-bottom:20px; border:1px solid #ccc;">
+
+            <p style="font-size:12px; color:gray;">
+                By continuing, you agree to Flipkart's 
+                <span style="color:#2874f0;">Terms of Use</span> and 
+                <span style="color:#2874f0;">Privacy Policy</span>.
+            </p>
+
+            <button style="width:100%; padding:12px; background:#fb641b; color:white; border:none; margin-top:15px;">
+                Request OTP
+            </button>
+
+            <p style="text-align:center; margin-top:40px; font-size:14px;">
+                New to Flipkart? 
+                <span style="color:#2874f0;">Create an account</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
