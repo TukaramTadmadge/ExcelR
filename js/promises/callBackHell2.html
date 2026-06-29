@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back Hell 2 </title>
+</head>
+<body>
+    <script>
+
+
+            function step1(callback){
+               setTimeout(() => {
+                   console.log('glass of water');
+                   callback();
+               }, 5000);
+            }
+            function step2(callback){
+                setTimeout(() => {
+                    console.log('squeeze lemon into water');
+                    callback();
+                }, 3000); 
+            }
+            function step3(callback){
+                setTimeout(() => {
+                    console.log('adding sugar , salt ,etc .,');
+                    callback();
+                }, 2000);
+            }
+            function step4(){
+                setTimeout(() => {
+                    console.log("stir and drink the lemon soda or juice .....");
+                }, 6000);  
+            }
+
+        // call back hell / pyramid of doom
+            step1(()=>{
+                 step2(()=>{
+                    step3(()=>{
+                        step4();
+                    });
+                 });
+            });
+
+
+        // output:
+        // glass of water
+        // callBackHell2.html:20 squeeze lemon into water
+        // callBackHell2.html:26 adding sugar , salt ,etc .,
+        // callBackHell2.html:32 stir and drink the lemon soda or juice .....
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+//         // constrctor function -- befor es6 
+//          function Person(){
+//          }
+//         let p= new Person();
+//         console.log(p); // empty object
+
+
+//         function Person2(name , email , phone){
+//            this.name=name;
+//            this.email=email;
+//            this.phone=phone;
+//         }
+//         let p2=new Person2('Raj','raj@gmail.com',86437888);
+//         console.log(p2);
+
+//         // after es6- 2015
+//         class Person3{
+//           constructor(name , email){
+//               this.name=name;
+//               this.email=email;
+//           }
+//         }
+//         let p3=new Person3('kumar','kumar@gmail.com');
+//         console.log(p3);
+        
+// // object literal
+//         let p4={
+//             "name":"Rupesh",
+//             "email":"rupesh@gmail.com"
+//         }
+//         console.log(p4);
+
+// // Object.create()
+
+//              let newP= Object.create(p3);
+//              console.log(newP);
+             
+
+
+        
+        
+
+// nested objects 
+  let obj= {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    'key':[10,203,34],
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  }
+
+//   console.log(Object.keys(obj));
+ 
+for (const a in obj) {  
+    console.log(a);   
+}
+
+  
+
+
+
+
+//   console.log(obj.name);
+//   console.log(obj['name']);
+  
+
+//   console.log(Object.keys(obj));
+//   console.log(Object.values(obj));
+//   console.log(Object.entries(obj));
+  
+  
+  
+
+        
+
+    </script>
+</body>
+</html>

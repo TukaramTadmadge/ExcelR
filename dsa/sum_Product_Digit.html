@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum_Product</title>
+    <!-- num-153
+         sum of digit in nun =9
+         lets give a break for 5 sec
+         product of digit in nun=15
+
+    -->
+</head>
+<body>
+    <script>
+     let num=153;
+     function sumOfDigit(num){
+         let sum=0;
+         let temp=num;
+         while(num>0){
+            let rem=num%10;
+            // sum=rem+sum;
+               sum+=rem;
+            num=Math.floor(num/10);   
+        }
+        console.log("sum of digit in ", temp,"is",sum);    
+     }
+     function productOfDigit(num){
+          let product=1;
+         let temp=num;
+         while(num>0){
+            let rem=num%10;
+               product*=rem;
+            num=Math.floor(num/10);   
+        }
+        console.log("product of digit in ", temp,"is",product);
+    }
+    
+     sumOfDigit(num);
+     setTimeout(() => {
+        productOfDigit(num);
+     }, 5000);
+
+    </script>
+</body>
+</html>

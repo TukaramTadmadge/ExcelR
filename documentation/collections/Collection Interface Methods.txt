@@ -1,0 +1,16 @@
+methods of Collection interface
+
+public boolean add(Object o);  add(10)  Integer
+public boolean add(int index,Object o);
+public boolean get(int index);
+public boolean remove(Object o);
+public boolean remove(int index);
+public int size();
+public void clear();
+public boolean contains(Object o);
+public boolean isEmpty();
+//2D collection
+public boolean addAll(Collection c)
+public boolean removeAll(Collection c)
+public boolean retainAll(Collection c)
+

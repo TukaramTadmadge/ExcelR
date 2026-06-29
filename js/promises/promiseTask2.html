@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Task 2</title>
+</head>
+
+<body>
+    <script>
+
+        // race - timing  ----> one result
+        //        resolve --- then block
+        //        reject ----catch block
+
+        // let p1 = new Promise(
+        //     (resolve) => {
+        //         setTimeout(() => resolve('promise 1'), 2000); //2s
+        //     }
+        // )
+        // let p2 = new Promise(
+        //     (resolve) => {
+        //         setTimeout(() => resolve('promise 2'), 4000); //4s
+        //     }
+        // )
+        // let p3 = new Promise(
+        //     (_,reject) => {
+        //         setTimeout(() => reject('promise 3'), 1000); //1s
+        //     }
+        // )
+        // Promise.race([p1, p2,p3])
+        //     .then(
+        //         (result) => { 
+        //             console.log('winner : ',result);
+        //         }
+        //     ).catch(
+        //         (err) => {
+        //             console.log('error : ',err);
+        //         }
+        //     )
+
+
+
+        // chicken biriyani
+        // 1- getting ingredeints
+        // 2- getting chicken
+        // 3-cutting
+        // 4-cooking
+//   all - return an array
+        let p1=Promise.resolve('getting groceries');
+        let p2 =Promise.reject('getting chicken and eggs');
+        let p3=Promise.resolve('cutting section');
+
+        // Promise.all([p1,p2,p3])
+        // .then(
+        //     (result)=>{
+        //           console.log('result:',result);
+        //           console.log('cooking is started ,,,,,,');    
+        //     }
+        // )
+        // .catch(
+        //     (err)=>{
+        //         console.log('error : ',err);
+                
+        //     }
+        // )
+
+
+        Promise.allSettled([p1,p2,p3])
+        .then(
+            (result)=>{
+                console.log('result:',result);             
+            }
+        )
+        .catch(
+            (err)=>{
+                console.log('error', error);               
+            }
+        )
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb ON/OFF using DOM</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        #bulb{
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        button{
+            width: 60px;
+            height: 50px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="bulb"></div>
+
+        <button onclick="bulbOn()">ON</button>
+
+        <button onclick="bulbOff()">OFF</button>
+
+    </div>
+
+    <script>
+
+        // Function for ON button
+        function bulbOn(){
+
+            let color = prompt("Enter bulb color");
+
+            document.getElementById("bulb").style.backgroundColor = color;
+        }
+
+        // Function for OFF button
+        function bulbOff(){
+
+            document.getElementById("bulb").style.backgroundColor = "white";
+        }
+
+    </script>
+
+</body>
+</html>

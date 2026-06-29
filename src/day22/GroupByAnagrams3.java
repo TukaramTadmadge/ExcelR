@@ -1,0 +1,35 @@
+package day22;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class GroupByAnagrams3 {
+public static void main(String[] args) {
+	
+	String sentance="silent listen note tone cab bca abc apple";
+	String words[]=sentance.split(" "); //[silent, listen, note, tone, cab, bca, abc, apple]
+	//{ "eilnst" =[silent,listen]     "enot"=[note,tone]   "abc"=[cab,bca,abc]   [apple] }
+	
+	//[[silent,listen][note,tone][cab,bca,abc][apple]]
+	Map<String,List<String>> hashmap=new HashMap();
+	
+	List<List<String>> anagramsGroups=Arrays.stream(words)
+	.collect(Collectors.groupingBy(GroupByAnagrams3::getString))
+	.entrySet()
+	.stream()
+	.map(entry->entry.getValue())
+	.toList();
+	
+	System.out.println(anagramsGroups);
+}
+
+		static public String getString(String s)
+		{
+			char arr[]=s.toCharArray(); //['l','i','s','t','e','n']
+			Arrays.sort(arr);
+			return new String(arr);
+		}
+}
